@@ -1,0 +1,141 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #000000;
+    color: white;
+}
+header {
+    background: #555555;
+    text-align: center;
+    padding: 20px;
+}
+header > button {
+    background: #555555;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 17px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+header > button:hover {
+    background: white;
+    color: black;
+}
+#container {
+    padding: 20px;
+    text-align: center;
+    width: 520px;
+    margin: auto;
+}
+.thumbnail {
+    display: inline-block;
+    background: #ffffff url("loader.gif") no-repeat center center / 15px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    transition: all .1s ease-in-out;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff url("loader.gif") no-repeat center center / 15px;
+    padding: 5px;
+    min-height: 200px;
+    min-width: 200px;
+    border-radius: 5px;
+    text-align: right;
+    display: inline-block;
+}
+.modal-content img {
+    display:  block;
+    margin: auto;
+    background:  white;
+}
+.close {
+    color: #000;
+    font-size: 30px;
+    width: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    position: absolute;
+    height: 45px;
+    border: 5px solid #000;
+    z-index: 1;
+    margin: -20px 0 0px -20px;
+    background: #fff;
+    font-weight: bolder;
+}
+.modalNavLeft {
+    background: #ffffff;
+    width: 50px;
+    height: 100px;
+    top: 50%;
+    color: #000;
+    text-align: center;
+    left: 0;
+    transform: translate(0, -50%);
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    line-height: 100px;
+}
+.modalNavLeft:active {
+    opacity: 0.9;
+}
+.modalNavRight {
+    background: #ffffff;
+    width: 50px;
+    height: 100px;
+    top: 50%;
+    color: #000;
+    text-align: center;
+    right: 0;
+    transform: translate(0, -50%);
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    line-height: 100px;
+}
+.modalNavRight:active {
+    opacity: 0.9;
+}
+#image-box {
+    display: block;
+}
